@@ -11,14 +11,27 @@
 
 <body>
   <div class="relative flex justify-between  ">
-    <img src="src/image1.webp" alt="" class="w-full object-cover h-[800px] object-top">
+    <img src="src/image1.webp" alt="" class="w-full object-cover h-screen object-top">
 
     <div class="absolute flex top-8 w-full justify-between items-center">
-      <div class="ml-7">
-        <img src="src/logo.png" alt="" class="w-48">
+      <div class="ml-7 overflow-hidden">
+        <img src="src/logo.png" alt="" class="md:w-48 w-32">
       </div>
 
-      <div class=" text-white flex flex-row gap-6 mr-8">
+      <div class="md:hidden flex items-center">
+        <div class="md:hidden text-white flex flex-row gap-6 mr-8">
+        <div class="w-8 h-8 overflow-hidden"> 
+          <img src="/src/search.png" alt="menu" class="w-full h-full">
+        </div>
+      </div>
+      <div class="md:hidden text-white flex flex-row gap-6 mr-8">
+        <div class="w-8 h-8 overflow-hidden"> 
+          <img src="/src/menu.png" alt="menu" class="w-full h-full">
+        </div>
+      </div>
+      </div>
+
+      <div class="hidden text-white md:flex flex-row gap-6 mr-8">
         <p class="relative group cursor-pointer">News
           <span
             class="absolute left-0 w-0 h-0.5 bg-white  bottom-0 transition-all duration-300 group-hover:w-full"></span>
@@ -51,7 +64,7 @@
     </div>
   </div>
 
-  <div class="absolute top-24 flex mt-10 justify-between w-full">
+  <div class="md:flex hidden absolute top-24 mt-10 justify-between w-full">
     <div class="text-white flex flex-row gap-8 font-bold mx-5">
       <p>Study ⮟</p>
       <p>Student Life ⮟</p>
@@ -69,13 +82,13 @@
     </div>
   </div>
 
-  <div class=" absolute top-36 mt-10 flex items-center flex-col ">
+  <div class="absolute top-36 md:mt-10 flex items-center flex-col md:p-0 p-4 mt-56">
 
     <div class="text-white border-2 px-4 py-3">
       <h1 class="font-bold text-4xl">Make 2026 your year</h1>
     </div>
-    <div class="text-white  border-2 ml-10 pr-6 ">
-      <p class="font-semibold px-2 py-2 pr-3.5 ">We offer a range of master’s courses in business and <br>
+    <div class="text-white  border-2 ml-5 md:ml-10 pr-0 md:pr-6 ">
+      <p class="font-semibold px-2 py-2 pr-4 md:pr-3.5 ">We offer a range of master’s courses in business and <br>
         management, allied health, computer science and <br>
         engineering all available to start in January 2026.</p>
     </div>
@@ -85,19 +98,23 @@
     </div>
   </div>
 
-  <div class="bg-blue-900 flex flex-col items-center text-white">
-    <div class="flex flex-row items-center justify-center gap-10 mt-6 mb-3">
-      <p class="font-bold">Find Your course</p>
-      <input type="text" class="bg-white outline-0 w-[400px] text-black px-6 py-4">
+  <div class="bg-blue-900 flex flex-col items-start md:items-center text-white">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-center gap-5 md:gap-10 ml-5 md:ml-0 mt-6 mb-3">
+      <div class="flex flex-col gap-4">
+        <p class="font-bold">Find Your course</p>
+      <div class="flex gap-5 items-center">
+        <input type="text" class="bg-white outline-0 w-[250px] md:w-[400px] text-black px-6 py-4">
       <div class="border border-white flex items-center px-3 py-4">
         <p>Search</p>
+      </div>
+      </div>
       </div>
       <div class="underline text-lg">
         <p>Course by A-Z</p>
         <p>Course by Subject</p>
       </div>
     </div>
-    <div class="flex flex-row gap-10 mt-5 ml-20 mb-4">
+    <div class="flex flex-col md:flex-row gap-10 mt-5 ml-5 mb-4">
       <div class="flex flex-row gap-4">
         <div class=" border-4  w-8 h-8 rounded-full">
         </div>
@@ -122,7 +139,7 @@
     <div class="mt-5 ml-8 text-2xl">
       <p class="font-bold">Discover the University of Liverpool</p>
     </div>
-    <div class="flex flex-row justify-between mt-10 mx-8">
+    <div class="flex flex-col md:flex-row justify-between mt-10 mx-8">
       <div class="mr-10">
         <img src="src/image2.jpeg" alt="" class="w-[500px]">
       </div>
@@ -171,37 +188,37 @@
           discover everything you need to know about studying with us.</p>
       </div>
 
-      <div class="flex flex-col">
-        <div class="flex flex-row gap-5 items-center ">
-          <div class="border-2 border-white px-4 py-4">
+      <div class="flex flex-col p-5">
+        <div class="flex flex-col md:flex-row gap-5 items-start md:items-center ">
+          <div class="border-2 border-white px-4 py-4 w-full">
             <p>Undergraduate</p>
           </div>
 
-          <div class="border-2 border-white px-4 py-4">
+          <div class="border-2 border-white px-4 py-4 w-full">
             <p>Master's</p>
           </div>
 
-          <div class="border-2 border-white px-4 py-4">
+          <div class="border-2 border-white px-4 py-4 w-full">
             <p>Postgraduate research</p>
           </div>
 
         </div>
-        <div class="flex flex-row mt-7 gap-9 mb-20">
-          <div class="border-2 border-white px-4 py-4">
+        <div class="flex flex-col md:flex-row mt-7 gap-9 mb-20">
+          <div class="border-2 border-white px-4 py-4 w-full">
             <p>Continuing Professional Development</p>
           </div>
-          <div class="border-2 border-white px-4 py-4">
+          <div class="border-2 border-white px-4 py-4 w-full">
             <p>International students</p>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <div class="md:flex hidden">
       <img src="src/image3.jpeg" alt="" class="w-96 h-full object-cover object-center">
     </div>
   </div>
 
-  <div class="bg-pink-500 flex flex-row items-center justify-center gap-20 py-6 mx-3 mb-2 mt-20 ">
+  <div class="bg-pink-500 flex flex-col md:lex-row items-center justify-center gap-20 px-5 py-6 mx-3 mb-2 mt-20 ">
     <img src="src/conversation.png" alt="" class="w-28">
     <p class="text-white font-bold text-4xl">Undergraduate <br> open events</p>
     <p class="text-2xl text-white">Meet us online at our Undergraduate Online <br>
@@ -216,11 +233,11 @@
     </div>
   </div>
 
-  <div class="bg-blue-800 flex flex-row justify-between items-center mt-10 text-white mx-3 mb-12 ">
-    <div class="w-1/2 h-90">
+  <div class="bg-blue-800 p-4 flex flex-col md:flex-row justify-between items-start md:items-center mt-10 text-white mx-3 mb-12">
+    <div class="md:w-1/2 h-90 w-full">
       <img src="src/image4.webp" alt="" class="object-cover object-center w-full h-full  ">
     </div>
-    <div class="w-1/2 ml-20 ">
+    <div class="md:w-1/2 w-full ml-2 md:ml-20 ">
       <div class="font-bold text-2xl mb-4">
         <p>University of Liverpool Fellowships</p>
       </div>
@@ -239,9 +256,9 @@
     <p class="text-4xl ">Our rankings and reputation</p>
   </div>
 
-  <div class="mt-5 flex justify-between mx-5">
+  <div class="mt-5 flex md:flex-row flex-col justify-between mx-5">
 
-    <div class="flex flex-row gap-10 bg-black/10 px-5 items-center">
+    <div class="flex flex-col md:flex-row gap-10 bg-black/10 px-5 items-center">
       <div>
         <img src="src/image5.png" alt="" class="w-24">
       </div>
@@ -278,9 +295,8 @@
     <p>Explore our rankings and reputation</p>
   </div>
 
-  <div class="bg-blue-900 flex flex-row justify-between items-center mx-3 mb-10">
-<!-- text -->
-    <div class="text-white ml-20">
+  <div class="bg-blue-900 flex flex-col md:flex-row justify-between items-center mx-3 mb-10">
+    <div class="text-white ml-5 md:ml-20">
       <div class="text-white mb-10">
         <div class="mb-5">
           <h1 class="font-bold text-2xl">Discover Liverpool in India</h1>
@@ -296,7 +312,7 @@
       </div>  
     </div>
 
-    <div>
+    <div class="mt-5 md:mt-0">
         <img src="src/church.jpg" alt="" class="object-cover object-center w-80">
       </div>
   </div>
@@ -310,7 +326,7 @@
      and the world around us</p>
   </div>
 <div>
-  <div class="grid grid-cols-3 mt-10 mx-3 ">
+  <div class="grid grid-cols-1 md:grid-cols-3 mt-10 mx-3 ">
 <div>
   <h1 class="underline font-bold text-blue-950">Research frontiers</h1>
 <p>Learn more about our research frontier and <br>
@@ -340,13 +356,12 @@ our researchers are improving the world we live in every day.</p>
   </div>
 </div>
 
-<div class="bg-black/10 mt-10 text-black flex flex-row justify-between mx-3 mb-20 ">
-<!-- image -->
+<div class="bg-black/10 mt-10 text-black flex flex-col md:flex-row justify-between mx-3 mb-20 ">
    <div>
       <img src="src/ihame.jpeg" alt="" class="w-96 h-full object-cover object-center">
     </div>
 
-    <div class="flex flex-col mr-30 mt-10">
+    <div class="flex flex-col mr-30 mt-10 p-5">
       <div class="font-bold text-2xl mb-2">
         <h1>Discover a vibrant student life in Liverpool</h1>
       </div>
@@ -357,16 +372,16 @@ our researchers are improving the world we live in every day.</p>
       </div>
 
       <div class="flex flex-col">
-        <div class="flex flex-row gap-5 items-center ">
-          <div class="border-2 border-black px-4 py-4">
+        <div class="flex flex-col md:flex-row gap-5 items-center ">
+          <div class="border-2 border-black px-4 py-4 w-full">
             <p>Undergraduate</p>
           </div>
 
-          <div class="border-2 border-black px-4 py-4">
+          <div class="border-2 border-black px-4 py-4 w-full">
             <p>Master's</p>
           </div>
 
-          <div class="border-2 border-black px-4 py-4">
+          <div class="border-2 border-black px-4 py-4 w-full">
             <p>Postgraduate research</p>
           </div>
 
@@ -376,9 +391,8 @@ our researchers are improving the world we live in every day.</p>
     </div>
   </div>
 
- <div class="bg-blue-900 flex flex-row justify-between items-center mx-3  mb-10">
-<!-- text -->
-    <div class="text-white ml-20">
+ <div class="bg-blue-900 flex flex-col md:flex-row gap-4 justify-between items-center mx-3  mb-10">
+    <div class="text-white md:p-0 p-5 ml-0 md:ml-20">
       <div class="text-white mb-10">
         <div class="mb-5">
           <h1 class="font-bold text-2xl">We're making an impact across the globe</h1>
@@ -409,11 +423,11 @@ our researchers are improving the world we live in every day.</p>
 
 
 <!-- news -->
- <div class=" flex flex-col  bg-black/20 px-4 py-7  ">
-  <p class="text-4xl text-black font-bold mx-14"> News</p>
-   <div class="mt-5 flex flex-row gap-8 mx-14">
+ <div class=" flex flex-col  bg-black/20 px-4 py-7 ">
+  <p class="text-4xl text-black font-bold">Latest news</p>
+   <div class="mt-5 flex flex-col md:flex-row gap-8 ">
 
-    <div class="flex flex-row gap-10 bg-white items-center px-10">
+    <div class="flex flex-col md:flex-row gap-10 bg-white items-center px-10">
       <div>
         <img src="src/umwana.png" alt="" class="w-80 h-60">
       </div>
@@ -461,13 +475,13 @@ our researchers are improving the world we live in every day.</p>
 
   <!-- Latest Events -->
 
-  <div class=" flex flex-col  bg-black/10 px-4 py-7  ">
+  <div class=" flex flex-col  bg-black/10 px-4 py-7 ">
   <p class="text-4xl text-black font-bold">Latest Updates</p>
-   <div class="mt-5 flex flex-row gap-8  ">
+   <div class="mt-5 flex flex-col md:flex-row gap-8 ">
 
-    <div class="flex flex-row gap-10 bg-white items-center px-10">
-      <div>
-        <img src="src/scie.jpg" alt="" class="w-80 h-60">
+    <div class="flex flex-col md:flex-row gap-10 bg-white items-start md:items-center px-10">
+      <div class="w-full">
+        <img src="src/scie.jpg" alt="" class="w-full h-full object-cover">
       </div>
       <div class="flex flex-col  " >
   
@@ -513,7 +527,7 @@ our researchers are improving the world we live in every day.</p>
 
   <!-- footer -->
 <div class="bg-black/80 p-10 flex flex-col ">
-  <div class=" grid grid-cols-5">
+  <div class=" grid grid-cols-1 md:grid-cols-5">
 
     <div >
 <img src="src/original.svg" alt="" class="w-50">
@@ -571,7 +585,7 @@ our researchers are improving the world we live in every day.</p>
     </div>
   </div>
 <hr class= "bg-white w-full mb-5 mt-8">
-  <div class="flex flex-row justify-between items-center">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-5">
     <div>
       <img src="src/russel.svg" alt="" class="w-40 invert brightness-0">
     </div>
@@ -583,7 +597,7 @@ our researchers are improving the world we live in every day.</p>
       <img src="src/linked in.png" alt="" class="w-8">
     </div>
   </div>
-  <div class="flex flex-row mt-10 underline text-white gap-8">
+  <div class="flex flex-col md:flex-row mt-10 underline text-white gap-8">
     <p>Accessibility</p>
      <p>Freedom of information</p>
      <p>Cookie information</p>
